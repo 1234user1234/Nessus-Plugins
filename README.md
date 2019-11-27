@@ -1,6 +1,6 @@
 # Nessus-Plugins
 
 ```
-$ tar -cvzf dirsearch.tar.gz dirsearch.inc script.nasl
+$ tar -cvzf dirsearch.tar.gz dirsearch.inc dirsearch.nasl
 # /opt/nessus/sbin/nessuscli update /home/user/dirsearch.tar.gz
 ```
