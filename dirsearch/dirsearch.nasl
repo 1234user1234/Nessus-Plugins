@@ -80,7 +80,7 @@ foreach dir (dirs)
 				);
 				if (res_get[0] =~ '^HTTP/[0-9.]+ +200')
 				{
-					found_list[found_ctr] = url + '\t\t:GET';
+					found_list[found_ctr] = url + '\t(GET, Len: ' + len(res_get[2] + ')';
 					found_ctr++;
 				};
 				res_post = http_send_recv3(
@@ -93,7 +93,7 @@ foreach dir (dirs)
 				);
 				if (res_post[0] =~ '^HTTP/[0-9.]+ +200')
 				{
-					found_list[found_ctr] = url + '\t\t:POST';
+					found_list[found_ctr] = url + '\t(POST, Len: ' + len(res_post[2]) + ')';
 					found_ctr++;
 				};
 			}
@@ -110,7 +110,7 @@ if (found_ctr > 0)
         for (i = 0; i < found_ctr; i++)
         {
             url = found_list[i];
-            report += 'URL\t\t: ' + build_url(port: port, qs: url) + '\n';
+            report += '' + build_url(port: port, qs: url) + '\n';
         }
 
     }
