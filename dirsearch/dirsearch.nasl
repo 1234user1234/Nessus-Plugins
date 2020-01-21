@@ -48,9 +48,9 @@ prefix_list = make_list("",".","_","~");
 file_list = make_list("access","account","admin","administrator","app","archive","auth","backup","build","config","cmd","data","database","debug","default","dump","error","file","health","healthz","home","index","install","log","login","main","manage","metric","monitoring","password","project","public","search","server","server-status","setting","shell","site","status","test","tmp","update","upload","user","xml","xmlrpc");
 
 # 's' for plural
-extension_list = make_list("",".ashx",".asp",".aspx",".bak",".html",".inc",".ini",".json",".log",".php",".php~",".php.bak",".sql",".tar",".tar.gz",".tgz",".txt",".txt~",".xml",".zip","s");
+extension_list = make_list("",".ashx",".asp",".aspx",".html",".inc",".ini",".json",".log",".php",".sql",".tar",".tar.gz",".tgz",".txt",".xml",".zip","s");
 
-suffix_list = make_list("","/","/%20","/?anything","#");
+suffix_list = make_list("","/","/%20","/?anything","#","~",".bak",".bak2",".old",".1");
 
 found_list = make_list();
 found_ctr = 0;
